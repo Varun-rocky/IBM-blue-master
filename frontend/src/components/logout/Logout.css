@@ -1,0 +1,28 @@
+/* Styling for the logout button */
+.logout-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #d9534f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the logout button */
+.logout-button:hover {
+  background-color: #c9302c;
+  transform: scale(1.05);
+}
+
+/* Focus outline for accessibility */
+.logout-button:focus {
+  outline: 2px solid #a94442;
+}
+
+/* Add some spacing if needed */
+.logout-button-container {
+  text-align: center;
+  margin-top: 20px;
+}

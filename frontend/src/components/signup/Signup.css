@@ -1,0 +1,105 @@
+/* Container for the entire signup/login page */
+.signup-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+/* Header for the form title */
+.form-container h1 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input fields styling */
+form input[type="email"],
+form input[type="password"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button styling for submit */
+form button[type="submit"] {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Paragraph for switching forms */
+form p {
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Toggle button for switching between login and signup */
+.toggle-button {
+  color: #007bff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.toggle-button:hover {
+  color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .signup-container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .form-container h1 {
+    font-size: 20px;
+  }
+
+  form input[type="email"],
+  form input[type="password"] {
+    font-size: 14px;
+  }
+
+  form button[type="submit"] {
+    font-size: 14px;
+  }
+}
