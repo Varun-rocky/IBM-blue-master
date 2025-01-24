@@ -1,9 +1,9 @@
 import React from "react";
-
+import Booking from "./booking/Booking";
 function Home() {
   return (
     <div>
-      <h1>Welcome to the Home Page!</h1>
+     <Booking></Booking>
     </div>
   );
 }
